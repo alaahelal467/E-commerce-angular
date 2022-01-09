@@ -1,0 +1,36 @@
+
+
+
+
+.copyright {
+    margin-top: 60px;
+    background-color: #ff3556;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.many {
+    color: #fff;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 26px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #000;
+}

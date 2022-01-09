@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "intouch-b972e": {
+      "hosting": {
+        "ecommerce-market": [
+          "intouch-b972e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "intouch-b972e"
+  }
+}

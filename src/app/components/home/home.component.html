@@ -1,0 +1,74 @@
+
+ <!-- banner -->
+ <!-- <section class="banner_main full_bg">
+   <div class="container">
+      <div class="banner_po">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="text_box">
+                  <span>Now started</span>
+                  <h1> <strong>Fruit And </strong> <br> Vegetables </h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section> -->
+     <!-- our products -->
+     <div class="products">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-7">
+                 <div class="titlepage">
+                    <h2>Our Products</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptu
+                    </span>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let good of goods ; index as i"  >
+                 <div  class="our_products ho_bo">
+                    <div class="product">
+                       <figure class="border-bottom"><img src="{{good.photoURL}}" alt="good photo"/></figure>
+                    </div>
+                    <h3> 
+                        <p class="mb-0">
+                           {{good.name | titlecase }}
+                        </p> 
+                       <p> <ngb-rating [rate]="currentRate"  ></ngb-rating></p>
+                       
+                     </h3>
+                    
+                    <span>{{good.price |currency}}</span>
+                    <div class="col-12 text-right">
+                     <button class="btn btn-primary" (click)="addToCart(i)" *ngIf="add !== i">Add to cart</button>
+                    </div>
+                    
+                    <div *ngIf="add === i">
+                       <input type="number"  placeholder="amount (kg)" class="form-control" #amount>
+                       <div class="col-12 text-right mt-3">
+                        <button class="btn btn-primary" (click)="buy(amount.value)">buy</button>
+                       </div>
+                       
+                    </div>
+                 </div>
+              </div>
+            
+           </div>
+           <div class="row">
+              <div class="col-12 text-center">
+               <div class="heading cf mt-3">
+                  <a routerLink="/shopping-cart" class="continue">MY shopping Cart</a>
+                </div>
+
+              </div>
+           </div>
+        </div>
+     </div>
+
+     
+
+
+
+    
